@@ -1,0 +1,32 @@
+---
+layout: page
+title: "分类"
+description: ""
+header-img: "img/black.jpeg"
+multilingual: false
+---
+
+
+<div id="archives">
+  {% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+
+    <h2 class="category-head">{{ category_name }}</h2>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories[category_name] %}
+      <article class="archive-item">
+        <h4>
+            <li>
+            <span>{{ post.date | date: '%Y-%m-%d' }}&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+            <hr>
+            </li>
+        </h4>
+      </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

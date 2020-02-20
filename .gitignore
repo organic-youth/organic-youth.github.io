@@ -1,5 +1,10 @@
 _site
-.sass-cache
-.jekyll-metadata
-node_modules/
-yarn.lock
+node_modules
+npm-debug.log
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*.sh
+.vscode
+.jekyll-cache
+.node_modules
