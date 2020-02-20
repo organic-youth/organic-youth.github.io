@@ -1,11 +1,11 @@
 # Site settings
-title: 白夜行的狼
-SEOTitle: 白夜行的狼的博客
+title: 有机小青年
+SEOTitle: 有机小青年的博客
 header-img: img/black.jpeg
-email: HaoQ_Chen@163.com
+email: 15976882534@163.com
 description: Think Different
-keyword: "白夜行的狼, 个人网站, 个人博客, SLAM, 激光雷达, C++, 机器人"
-url: "https://haoqchen.site"              # your host, for absolute URL
+keyword: "有机小青年, 个人网站, 个人博客, Linux, C++, 机器人"
+url: ""              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -14,10 +14,10 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     1952114745
-zhihu_username:     HaoQ_Chen
-github_username:    HaoQChen
-CSDN_username:      u013834525
+weibo_username:     
+zhihu_username:     
+github_username:    
+CSDN_username:      
 #twitter_username:   
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
@@ -27,7 +27,7 @@ CSDN_username:      u013834525
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-permalink: /:year/:month/:day/:title/
+permalink: /title/ #/:year/:month/:day/:title/
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
