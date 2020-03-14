@@ -157,3 +157,25 @@ ssh -p 10010 root@ip
 ```
 
 OK, 大功告成。
+
+
+
+## 存在的问题
+
+因为数据全都存储在虚拟盘中，如果Docker有异常之后数据特别容易丢失。
+
+
+
+## 优化
+
+挂载硬盘到Docker中
+
+![1584178324890](../img/2020-03-13-使用Docker Desktop搭建编译环境.assets/1584178324890.png)
+
+启动容器时使用
+
+```
+docker run -d -it -p 10010:22  -v D:/user:/home --restart=always --name test.001 ubuntu:ssh /start.sh
+```
+
+这样在容器/home目录下的数据会保存到D:/user中
